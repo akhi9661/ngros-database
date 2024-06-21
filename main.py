@@ -1,5 +1,5 @@
 import customtkinter as ctk, tkinter as tk, numpy as np
-from tkinter import scrolledtext, filedialog, messagebox, ttk, Toplevel, simpledialog, Label, PanedWindow
+from tkinter import scrolledtext, filedialog, messagebox, ttk, Toplevel, simpledialog, Label
 import platform, os, shutil, rasterio
 import pandas as pd
 from collections import defaultdict
