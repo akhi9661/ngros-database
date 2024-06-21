@@ -1,6 +1,16 @@
 # NGROS DATABASE MANAGEMENT SYSTEM
 *Note*: This repo is a work in progress. No warranty offered for the code modules used. 
 
+---
+## HOW TO USE
+
+- Download ```requirements.txt``` and  ```main.py``` files
+- Install conda
+- Open Anaconda prompt
+- Create a new environment: ```conda create -n env_name python=3.10```
+- Install required libraries (do install other libraries if required): ```pip install -r /path/to/requirements.txt```
+- Copy & Paste the code in a Jupyter notebook (preferred) or run in console as: ```python main.py```
+
 ----
 ## METEOROLOGICAL DATA
 
