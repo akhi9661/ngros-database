@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/1ICa2nh3mbflJCrJ4oKNUHWTZ9_vTJw8F?usp=sharing](https://colab.research.google.com/github/akhi9661/ngros-database/blob/main/database.ipynb))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/akhi9661/ngros-database/blob/main/database.ipynb)
 
 # NGROS DATABASE MANAGEMENT SYSTEM
 *Note*: This repo is a work in progress. No warranty offered for the code modules used. 
