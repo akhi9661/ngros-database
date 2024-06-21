@@ -1,15 +1,19 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/1ICa2nh3mbflJCrJ4oKNUHWTZ9_vTJw8F?usp=sharing](https://colab.research.google.com/github/akhi9661/ngros-database/blob/main/database.ipynb))
+
 # NGROS DATABASE MANAGEMENT SYSTEM
 *Note*: This repo is a work in progress. No warranty offered for the code modules used. 
 
 ---
 ## HOW TO USE
 
-- Download ```requirements.txt``` and  ```main.py``` files
+- Download ```requirements.txt``` and  ```main.py``` (or ```database.ipynb```) files
 - Install conda
 - Open Anaconda prompt
 - Create a new environment: ```conda create -n env_name python=3.10```
 - Install required libraries (do install other libraries if required): ```pip install -r /path/to/requirements.txt```
-- Copy & Paste the code in a Jupyter notebook (preferred) or run in console as: ```python main.py```
+- Open the ipynb file in Jupyter notebook (preferred) or run in console as: ```python main.py```
+
+Alternatively, click on ```Open in Colab``` badge to run it on Google Colab platform.
 
 ----
 ## METEOROLOGICAL DATA
