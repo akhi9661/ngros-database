@@ -1,0 +1,7 @@
+customtkinter
+rasterio
+geopandas
+pandas
+matplotlib
+mplcursors
+numpy
