@@ -24,7 +24,6 @@ SITE_LIST_FILE = os.path.join(DATABASE_FOLDER, "site_list.csv")
 SITE_FILES_FOLDER = os.path.join(DATABASE_FOLDER, "site_files")
 display_selection = None
 
-# Ensure the necessary directories and files exist
 os.makedirs(SITE_FILES_FOLDER, exist_ok=True)
 if not os.path.exists(SITE_LIST_FILE):
     pd.DataFrame(columns=["Serial No.", "File Name", "Site ID", "Latitude", "Longitude"]).to_csv(SITE_LIST_FILE, index=False)
@@ -254,9 +253,9 @@ def display_table():
                 row_values += [averages.get(col, "") for col in site_files_columns]
                 child_table.insert("", "end", values=row_values)
 
-            child_table.bind("<Double-1>", on_double_click)
-            child_table.bind("<Delete>", delete_items)
-            child_table.bind("<Return>", lambda event: display_file(child_table))
+            child_table.bind("<Double-1>", on_double_click) # Select and Double-click opens up file in default system app
+            child_table.bind("<Delete>", delete_items) # Select and press Delete prompts (& executes) deletion
+            child_table.bind("<Return>", lambda event: display_file(child_table)) # Select and press Enter opens up file inside GUI
 
             child_x_scrollbar.config(command=child_table.xview)
             child_y_scrollbar.config(command=child_table.yview)
@@ -497,10 +496,7 @@ def get_site_info(parent):
     return result
     
 def add_site():
-    file_path = filedialog.askopenfilename(
-        parent=root,
-        filetypes=[("CSV files", "*.csv"), ("Excel files", "*.xlsx")]
-    )
+    file_path = filedialog.askopenfilename( parent=root, filetypes=[("CSV files", "*.csv"), ("Excel files", "*.xlsx")])
     if file_path:
         site_name = os.path.basename(file_path)
         new_site_path = os.path.join(SITE_FILES_FOLDER, site_name)
